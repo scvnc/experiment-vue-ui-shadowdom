@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/experiment-primevue-shadowdom/',
+  base: '/experiment-vue-ui-shadowdom/',
   plugins: [vue()],
   resolve: {
     alias: {
