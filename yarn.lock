@@ -2246,6 +2246,11 @@ punycode@^2.1.0, punycode@^2.1.1, punycode@^2.3.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
+quasar@^2.11.10:
+  version "2.11.10"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.11.10.tgz#31bf49dd7995673b2116aa250bb0b019ddcae74f"
+  integrity sha512-pV7bMdY/FUmOvNhZ2XjKSXJH92fsDu0cU/z7a9roPKV54cW41N1en3sLATrirjPComyZnk4uXrMdGtXp8+IpCg==
+
 querystringify@^2.1.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
@@ -2821,6 +2826,11 @@ vue@^3.2.47:
     "@vue/runtime-dom" "3.2.47"
     "@vue/server-renderer" "3.2.47"
     "@vue/shared" "3.2.47"
+
+vuetify@^3.1.14:
+  version "3.1.15"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.1.15.tgz#aacee61d81dcaaeabaae44f68172de142dadd274"
+  integrity sha512-uxB4UCrP+hFyJaoSsVObAGBRD73qq5ga7HULepzGoMeUWap2H99mcqmMdN/a/Yp4ODK3gT8EcUeph3EgEcsArQ==
 
 w3c-xmlserializer@^4.0.0:
   version "4.0.0"
