@@ -1,52 +1,30 @@
-# experiment-shadowdom
+# experiment-vue-ui-shadowdom
 
-This template should help get you started developing with Vue 3 in Vite.
+See [Demo.](https://scvnc.github.io/experiment-vue-ui-shadowdom/)
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+I am experimenting with having Popular Vue UI Frameworks used in a ShadowDOM environment for microfrontends.  Pros and cons to these libraries.
 
-## Type Support for `.vue` Imports in TS
+### Tested Frameworks
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Primevue
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+has js errors, but styles are relatively isolated when adding the styles to 'both'
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Seems to require requiring the styles in both document and shadowRoot.
 
-## Customize configuration
+## Quasar
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Works really well, stellar datepicker, low level components kind of nice.  It does pollute the styles a bit so we'd have to figure out how to bake in namespacing for it.
 
-## Project Setup
+Seems to require requiring the styles in both document and shadowRoot. 
 
-```sh
-yarn
-```
+## Vuetify3
 
-### Compile and Hot-Reload for Development
+Missing datepicker.  It does pollute the styles a bit so we'd have to figure out how to bake in namespacing for it.
 
-```sh
-yarn dev
-```
+Seems to require requiring the styles in both document and shadowRoot.
 
-### Type-Check, Compile and Minify for Production
+## Scaffolding
 
-```sh
-yarn build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-yarn test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+This was scaffolded with `yarn create vue` [docs](https://vuejs.org/guide/quick-start.html)
